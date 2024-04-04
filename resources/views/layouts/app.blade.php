@@ -17,8 +17,8 @@
             </h1>
 
             <nav class="flex gap-4 items-center">
-                <a class="font-bold uppercase text-gray-600" href="#">Login</a>
-                <a class="font-bold uppercase text-gray-600" href="#">Registration</a>
+                <a class="font-bold uppercase text-gray-600" href="#">Sign in</a>
+                <a class="font-bold uppercase text-gray-600" href="{{ route('auth.register') }}">Create account</a>
             </nav>
         </div>
     </header>
@@ -30,7 +30,7 @@
         @yield('content')
     </main>
 
-    <footer class="text-center p-5 text-gray-500 font-bold">
+    <footer class="text-center p-5 text-gray-500 font-bold mt-10">
         DevStagram - Todos los derechos reservados {{ date('Y') }}
     </footer>
 </body>
