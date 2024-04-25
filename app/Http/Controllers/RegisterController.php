@@ -39,6 +39,6 @@ class RegisterController extends Controller
             'password' => Hash::make($request->get('password'))
         ]);
 
-        dd("Usuario creado");
+        return redirect()->route('posts.index');
     }
 }
